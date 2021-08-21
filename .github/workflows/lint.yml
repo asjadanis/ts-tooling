@@ -1,0 +1,28 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: '14.16.1'
+
+      - name: Setup Yarn
+        run: npm install --global yarn
+        
+      - name: Confirm Yarn version
+        run: yarn --version
+        
+      - name: Install Node Modules
+        run: yarn install
+      
+      - name: Lint and format
+        run: |
+          yarn lint
+          yarn format
