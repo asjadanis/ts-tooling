@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon --watch '**/*.ts' --exec 'ts-node' src/index.ts",
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix"
+    "lint-fix": "eslint . --ext .ts --fix",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "keywords": [],
   "author": "",
