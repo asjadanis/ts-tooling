@@ -10,6 +10,12 @@
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +26,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
     "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
