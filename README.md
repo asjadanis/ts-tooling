@@ -1,6 +1,6 @@
 # ts-tooling [![Lint](https://github.com/asjadanis/ts-tooling/actions/workflows/lint.yml/badge.svg)](https://github.com/asjadanis/ts-tooling/actions/workflows/lint.yml)
 
-A very simple and extendable boilerplate for typescript configured with ESLint, Prettier, Husky, Commitizen, and Github Actions.
+A very simple and extendable boilerplate for typescript configured with ESLint, Prettier, Husky, Commitizen.
 
 ### Lint
 
